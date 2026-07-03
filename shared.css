@@ -1,0 +1,43 @@
+/* Liam Teacher — shared styles */
+:root {
+  --plum:       #3D2459;
+  --plum-lt:    #C4A8E0;
+  --plum-bg:    #F5F0FA;
+  --text:       #1A1917;
+  --muted:      #7A756C;
+  --border:     #DDD9D0;
+  --surface:    #FFFFFF;
+  --bg:         #F7F5F2;
+  --radius:     10px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+#shared-header { width: 100%; }
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 24px;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.site-footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-footer a:hover { color: var(--plum); }
